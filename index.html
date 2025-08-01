@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Рождения!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Воздушные шарики -->
+    <div class="balloon" style="left: 10%; top: 80%;"></div>
+    <div class="balloon" style="left: 20%; top: 70%; animation-delay: 0.5s;"></div>
+    <div class="balloon" style="left: 30%; top: 75%; animation-delay: 1s;"></div>
+    <div class="balloon" style="left: 80%; top: 65%; animation-delay: 1.5s;"></div>
+    <div class="balloon" style="left: 70%; top: 80%; animation-delay: 2s;"></div>
+    <div class="balloon" style="left: 90%; top: 70%; animation-delay: 2.5s;"></div>
+    
+    <div class="container">
+        <div id="congratulation">
+            <h1>С Днём Рождения! <span class="emoji">🎉</span></h1>
+            <div id="cake" class="emoji">🎂</div>
+            <p>Пусть этот день принесёт тебе море радости, улыбок и приятных моментов!</p>
+            <p>Желаю счастья, здоровья, успехов во всех начинаниях и исполнения самых заветных желаний!</p>
+            <button onclick="showWish()">Нажми для особого пожелания</button>
+        </div>
+        
+        <div id="special-wish" class="hidden">
+            <h2>Особое пожелание для тебя <span class="emoji">💖</span></h2>
+            <p>Пусть каждый новый день будет наполнен теплом, любовью и вдохновением!</p>
+            <p>Окружай себя людьми, которые делают тебя счастливым, и занимайся тем, что приносит тебе радость!</p>
+            <button onclick="showCongratulation()">Вернуться назад</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
