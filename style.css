@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    color: #d23669;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.balloon {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: rgba(255, 99, 132, 0.7);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.balloon:nth-child(2n) {
+    background-color: rgba(54, 162, 235, 0.7);
+}
+
+.balloon:nth-child(3n) {
+    background-color: rgba(255, 206, 86, 0.7);
+}
+
+.balloon:nth-child(4n) {
+    background-color: rgba(75, 192, 192, 0.7);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-100px) rotate(5deg);
+    }
+}
+
+button {
+    background-color: #d23669;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a51c4b;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#cake {
+    font-size: 60px;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+.emoji {
+    font-size: 1em;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
